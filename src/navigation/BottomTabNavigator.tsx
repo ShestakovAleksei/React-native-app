@@ -16,7 +16,7 @@ export const BottomTabNavigator = () => {
         component={PhotosFeed}
         options={{
           title: "Photos",
-          tabBarIcon: ({ color }) => <Icon name="ios-apps" color={color} />,
+          tabBarIcon: ({ color }) => <Icon />,
         }}
       />
       <BottomTab.Screen
@@ -24,7 +24,7 @@ export const BottomTabNavigator = () => {
         component={Settings}
         options={{
           title: "Settings",
-          tabBarIcon: ({ color }) => <Icon name="ios-cog" color={color} />,
+          tabBarIcon: ({ color }) => <Icon />,
         }}
       />
     </BottomTab.Navigator>

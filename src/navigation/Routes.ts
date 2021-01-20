@@ -1,4 +1,5 @@
 export enum Routes {
   PhotosFeed = "Photos",
-  Settings = "settings"
+  DetailedPhoto="DetailedPhoto",
+  Settings = "settings",
 }
