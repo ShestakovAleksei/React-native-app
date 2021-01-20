@@ -1,9 +1,14 @@
 import { StatusBar } from "expo-status-bar";
 import React from "react";
 import { StyleSheet, Text, View } from "react-native";
-import {PhotosFeed} from "./src/features/PhotosFeed/PhotosFeed"
+import {PhotosFeed} from "./src/features/PhotosFeed/PhotosFeed";
+import  {Api}  from './src/api/Api';
 
 export default function App() {
+
+  console.log(Api())
+
+
   return (
     <View style={styles.container}>
       <Text>photo-app</Text>
