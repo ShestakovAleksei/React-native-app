@@ -1,19 +1,17 @@
 import { StatusBar } from "expo-status-bar";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { StyleSheet, Text, View } from "react-native";
-import {PhotosFeed} from "./src/features/PhotosFeed/PhotosFeed";
-import  {Api}  from './src/api/Api';
+import { PhotosFeed } from "./src/features/PhotosFeed/PhotosFeed";
+
 
 export default function App() {
-
-  console.log(Api())
 
 
   return (
     <View style={styles.container}>
       <Text>photo-app</Text>
-      <PhotosFeed></PhotosFeed>
-      <StatusBar style="auto" />
+      <PhotosFeed/>
+      <StatusBar style="auto"/>
     </View>
   );
 }
