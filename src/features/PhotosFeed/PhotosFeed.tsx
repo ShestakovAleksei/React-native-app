@@ -41,8 +41,8 @@ export const PhotosFeed = () => {
 
 const styles = StyleSheet.create({
   tinyLogo: {
-    margin: 15,
-    marginLeft: 0,
+    marginTop: 15,
+    marginLeft: 50,
     width: 300,
     height: 300,
   },
