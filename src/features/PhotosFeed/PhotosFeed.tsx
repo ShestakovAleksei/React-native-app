@@ -15,50 +15,35 @@ export const PhotosFeed = () => {
       });
   }, []);
 
-
-  if(photos.length > 0){
-
-    const Photo = ({ title, url })=> (
+  if (photos.length > 0) {
+    const Photo = ({ title, url }) => (
       <View>
         <Text>{title}</Text>
-        <Image style={styles.tinyLogo} source={{ uri: url }}/>
+        <Image style={styles.tinyLogo} source={{ uri: url }} />
       </View>
     );
 
     const renderPhoto = ({ item }) => (
       <TouchableOpacity>
-        <Photo title={item.title} url={item.url}/>
+        <Photo title={item.title} url={item.url} />
       </TouchableOpacity>
     );
 
     return (
       <SafeAreaView>
-        <FlatList
-          data={photos}
-          renderItem={renderPhoto}
-          keyExtractor={photo => photo.id.toString()}
-        />
+        <FlatList data={photos} renderItem={renderPhoto} keyExtractor={(photo) => photo.id.toString()} />
       </SafeAreaView>
     );
-  }else{
-    return (
-      <Text>
-        Array is empty
-      </Text>
-    )
+  } else {
+    return <Text>Array is empty</Text>;
   }
 };
 
 const styles = StyleSheet.create({
-  container: {
-    paddingTop: 50,
-  },
   tinyLogo: {
-    width: 50,
-    height: 50,
-  },
-  logo: {
-    width: 66,
-    height: 58,
+    margin: 15,
+    marginLeft: 0,
+    width: 300,
+    height: 300,
   },
 });

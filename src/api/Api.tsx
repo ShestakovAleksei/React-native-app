@@ -1,15 +1,8 @@
-import React from 'react';
-// import { useEffect, useState } from 'react';
-import { ActivityIndicator, FlatList, Text, View } from 'react-native';
-import axios from 'axios';
-
+import axios from "axios";
+import { urlPhoto } from "../constants/url";
 
 export const Api = {
-
-
   getPhotos: () => {
-    return axios
-            .get('https://jsonplaceholder.typicode.com/photos?_limit=20')
-  }
+    return axios.get(urlPhoto);
+  },
 };
-
